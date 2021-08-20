@@ -1,0 +1,87 @@
+*{
+  font-family: calibri; /*calibri*/ 
+  margin: 0; padding: 0;
+  /* outline: 1px solid #ff0000; */
+  box-sizing: border-box;
+}
+
+.content{
+  background-color: #f9f9f9;
+  color: #9e3f3f;
+}
+
+.pomodoro-button {
+  border: none;
+  border-bottom: 5px solid #e9e9e9;
+  border-right: 5px solid #e9e9e9; color: #9e3f3f;
+  text-shadow: 2px 2px 0px #b15f5c;
+  background-color: #9e3f3f;
+  color: #f9f9f9;
+}
+
+html, body {width: 100%; height: 100%;}
+
+body{
+  background-color: #f9f9f9;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#timer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+
+#timer {
+  color: #f9f9f9;
+  font-size: 10em;
+  text-shadow: 2px 2px 0px #e9e9e9;
+  background-color: #9e3f3f;
+  font-weight: 700;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+
+  border-bottom: 10px solid #8e2f2f;
+  border-right: 10px solid #8e2f2f;
+  width: 400px;
+}
+#options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+#reset-button {
+ font-size: 2em;
+}
+#button-timer {
+  font-size: 3em;
+  width: 300px;
+  border-radius: 20px;
+}
+
+#button-finish{
+  font-size: 2em;
+  margin: 20px;
+  width: 80px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+#pomodoro-number{
+  display: none;
+  font-size: 2em;
+} 
+
+
