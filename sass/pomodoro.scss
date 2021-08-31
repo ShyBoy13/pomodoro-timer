@@ -1,40 +1,40 @@
-* {
-  font-family: calibri;
-  /*calibri*/
-  margin: 0;
-  padding: 0;
+ 
+$PomoPrimaryColor: #9e3f3f;
+$PomoSecundaryColor: #f9f9f9;
+$PomoPrimaryDarkColor: #7e1f1f;
+
+$BreakPrimaryColor: #00ffff;
+$BreakPrimaryDarkColor: #00fefe;
+
+*{
+  font-family: calibri; /*calibri*/ 
+  margin: 0; padding: 0;
   /* outline: 1px solid #ff0000; */
   box-sizing: border-box;
 }
 
 .break-color {
-  border-color: #00ffff;
-  background: #00ffff;
+  border-color: $BreakPrimaryColor; 
+  background: $BreakPrimaryColor;
 }
-
-.content {
-  background-color: #9e3f3f;
-  color: #f9f9f9;
+.content{
+  background-color: $PomoPrimaryColor;
+  color: $PomoSecundaryColor;
 }
 
 .pomodoro-button {
   border: 3px solid #8d2f2f;
-  color: #f9f9f9;
-  background-color: #9e3f3f;
-  margin: 10px;
-  padding: 5px;
+  color: $PomoSecundaryColor;
+  background-color: $PomoPrimaryColor;
+  margin: 10px; padding: 5px;
   border-radius: 10px;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-}
+html, body {width: 100%; height: 100%;}
 
-body {
+body{
   background-color: #f9f9f9;
 }
-
 #root {
   width: 100%;
   height: 100%;
@@ -55,42 +55,42 @@ body {
   background-color: #9e3f3f;
   font-weight: 700;
   border-radius: 20px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px;
+
   border-bottom: 10px solid #8e2f2f;
   border-right: 10px solid #8e2f2f;
   padding: 10px;
   width: 400px;
 }
-
 #options {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-#options button {
-  font-size: 1.5em;
-  border: none;
-  border-bottom: 5px solid #8d2f2f;
-  color: #f9f9f9;
-  background-color: #9e3f3f;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-}
 
+  button {
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 5px solid #8d2f2f;
+    color: $PomoSecundaryColor;
+    background-color: $PomoPrimaryColor;
+    margin: 10px; padding: 10px;
+    border-radius: 10px;
+  }
+}
 #button-timer {
   font-size: 2em;
   width: 300px;
 }
 
-#pomodoro-number {
+#pomodoro-number{
   display: none;
   font-size: 2em;
-}
+} 
 
-/*# sourceMappingURL=pomodoro.css.map */
+

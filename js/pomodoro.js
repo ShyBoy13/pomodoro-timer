@@ -143,11 +143,12 @@ const actualTimer = document.querySelector('#actual-timer');
 const timer = new PomodoroTimer(25, timerElem, stopButton, finishButton, pomodoroNumber, resetButton, (typeTimer) => {
   actualTimer.textContent = timer.typeTimer;
   if (typeTimer === 'pomodoro'){
-    document.querySelector('body').style.backgroundColor = '#3e3e3e';
+    document.querySelector('#timer').style.backgroundColor = '#9e3f3f';
   } else if (typeTimer == 'shortBreak'){
-    document.querySelector('body').style.backgroundColor = '#505050';
+    document.querySelector('#timer').style.backgroundColor = '#25cc8c';
+    document.querySelector('#timer').style.borderColor = '#15bc7c';
   } else if (typeTimer == 'longBreak'){
-    document.querySelector('body').style.backgroundColor = '#505050';
+    document.querySelector('#timer').style.backgroundColor = '#98f6a8';
   }
 });
 
