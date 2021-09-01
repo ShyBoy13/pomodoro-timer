@@ -12,21 +12,23 @@
 <body>
   <div id="root">
     <main>
-      <div id="timer-container">
-        <div id="timer">
-        </div>
-        <div id="actual-timer" class="content"></div>
-        <div id="options">
+      <section id="timer-container">
+        <article id="timer"></article>
+        <article id="actual-timer" class="content"></article>
+        <article id="options">
           <button id="button-finish" >Saltar</button>
           <button id="reset-button" >Reiniciar</button>
-        </div>
+        </article>
         <button id="button-timer" class="pomodoro-button">INICIAR</button>
-      </div>
-      <div class="content">
-        Today's pomodoros: <div id="pomodoro-number" class="content"></div>
-      </div>
+      </section>
+      <aside>
+        <article id="pomodoro-number-wrapper" class="content">
+          Pomodoros: <div id="pomodoro-number" ></div>
+        </article>
+      </aside>
     </main>
     
+
     <section id="create-task-container">
       <input id="create-task-text" type="text">
       <button id="add-task-btn" disabled >Add Task</button>

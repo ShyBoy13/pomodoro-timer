@@ -22,14 +22,6 @@ $BreakPrimaryDarkColor: #00fefe;
   color: $PomoSecundaryColor;
 }
 
-.pomodoro-button {
-  border: 3px solid #8d2f2f;
-  color: $PomoSecundaryColor;
-  background-color: $PomoPrimaryColor;
-  margin: 10px; padding: 5px;
-  border-radius: 10px;
-}
-
 html, body {width: 100%; height: 100%;}
 
 body{
@@ -38,6 +30,21 @@ body{
 #root {
   width: 100%;
   height: 100%;
+}
+main {
+  display: flex;
+  position: relative;
+  aside {
+    width: 90px;
+    position: absolute;
+    text-align: center;
+    top: 10px; left: 10px;
+
+    #pomodoro-number-wrapper {
+      border-radius: 10px;
+    }
+
+  }
 }
 
 #timer-container {
@@ -86,11 +93,17 @@ body{
 #button-timer {
   font-size: 2em;
   width: 300px;
+  border: none;
+  border-bottom: 5px solid #8d2f2f;
+  color: $PomoSecundaryColor;
+  background-color: $PomoPrimaryColor;
+  margin: 10px; padding: 10px;
+  border-radius: 10px;
 }
 
 #pomodoro-number{
   display: none;
-  font-size: 2em;
+  font-size: 1.5em;
 } 
 
 
