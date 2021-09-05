@@ -4,45 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/pomodoro.css">
-  <link rel="stylesheet" href="styles/tasks.css">
   <title>Pomodoro Timer</title>
   <script defer src="js/pomodoro.js"></script>
-  <script defer src="js/tasks.js"></script>
 </head>
 <body>
   <div id="root">
     <main>
       <section id="timer-container">
+        <aside id="data"class="content">
+          <article id="actual-timer"></article>
+          <article id="pomodoro-number-wrapper">
+            <p>Current Pomodoros:  <div id="pomodoro-number" ></div></p>
+          </article>
+          <button id="reset-pomodoros-btn">🔄</button>
+        </aside>
         <article id="timer"></article>
-        <article id="actual-timer" class="content"></article>
         <article id="options">
           <button id="button-finish" >Saltar</button>
           <button id="reset-button" >Reiniciar</button>
+          <button id="button-timer" class="pomodoro-button">INICIAR</button>
         </article>
-        <button id="button-timer" class="pomodoro-button">INICIAR</button>
       </section>
-      <aside>
-        <article id="pomodoro-number-wrapper" class="content">
-          Pomodoros: <div id="pomodoro-number" ></div>
-        </article>
-      </aside>
     </main>
-    
-
-    <section id="create-task-container">
-      <input id="create-task-text" type="text">
-      <button id="add-task-btn" disabled >Add Task</button>
-    </section>
-    <section id="task-container">
-      <div id="task-list">
-      <!-- <div class="single-task" id="0" position="4">
-            <input type="checkbox">
-            --text--
-            <button class="delete-task-btn">delete</button>
-           </div> -->
-      </div>
-    </section>
-
   </div>
 </body>
 </html>
